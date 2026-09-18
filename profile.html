@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+
+    <meta charset="UTF-8">
+
+    <meta name="viewport"
+          content="width=device-width, initial-scale=1.0">
+
+    <title>Личный кабинет — Акватория</title>
+
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="pages.css">
+    <link rel="stylesheet" href="responsive.css">
+
+</head>
+
+<body>
+
+<header class="header inner-header">
+
+    <a href="index.html" class="logo">
+        АКВАТОРИЯ
+    </a>
+
+    <nav class="nav">
+        <a href="boats.html">Катера</a>
+        <a href="activities.html">Активный отдых</a>
+        <a href="gallery.html">Галерея</a>
+        <a href="reviews.html">Отзывы</a>
+        <a href="contacts.html">Контакты</a>
+    </nav>
+
+</header>
+
+
+<section class="profile-page section">
+
+    <div class="profile-header">
+
+        <p class="eyebrow dark">
+            ЛИЧНЫЙ КАБИНЕТ
+        </p>
+
+        <h1>
+            Привет,
+            <span id="profile-name">
+                пользователь
+            </span>
+        </h1>
+
+        <button
+                onclick="logout()"
+                class="btn btn-dark">
+
+            Выйти
+
+        </button>
+
+    </div>
+
+
+    <div class="profile-grid">
+
+        <div class="profile-card">
+
+            <h3>
+                Мои данные
+            </h3>
+
+            <p>
+                Имя:
+                <strong id="profile-user-name"></strong>
+            </p>
+
+            <p>
+                E-mail:
+                <strong id="profile-email"></strong>
+            </p>
+
+            <p>
+                Телефон:
+                <strong id="profile-phone"></strong>
+            </p>
+
+        </div>
+
+
+        <div class="profile-card">
+
+            <h3>
+                Мои бронирования
+            </h3>
+
+            <div id="profile-bookings">
+                Пока нет бронирований.
+            </div>
+
+        </div>
+
+
+        <div class="profile-card">
+
+            <h3>
+                Мои отзывы
+            </h3>
+
+            <div id="profile-reviews">
+                Вы ещё не оставляли отзывов.
+            </div>
+
+        </div>
+
+    </div>
+
+</section>
+
+
+<script src="js/auth.js"></script>
+
+</body>
+</html>

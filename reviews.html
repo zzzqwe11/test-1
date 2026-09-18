@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, initial-scale=1.0">
+
+    <title>Отзывы — Акватория</title>
+
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="pages.css">
+    <link rel="stylesheet" href="responsive.css">
+
+</head>
+
+<body>
+
+<header class="header inner-header">
+
+    <a href="index.html" class="logo">
+        АКВАТОРИЯ
+    </a>
+
+    <nav class="nav">
+        <a href="boats.html">Катера</a>
+        <a href="activities.html">Активный отдых</a>
+        <a href="gallery.html">Галерея</a>
+        <a href="reviews.html">Отзывы</a>
+        <a href="about.html">О компании</a>
+        <a href="contacts.html">Контакты</a>
+    </nav>
+
+</header>
+
+
+<section class="page-hero">
+
+    <p class="eyebrow dark">
+        ОТЗЫВЫ КЛИЕНТОВ
+    </p>
+
+    <h1>
+        Нам важно<br>
+        ваше <span>мнение</span>
+    </h1>
+
+</section>
+
+
+<section class="section">
+
+    <div class="review-form">
+
+        <h2>
+            Оставить отзыв
+        </h2>
+
+        <form id="review-form">
+
+            <input
+                    type="text"
+                    id="review-name"
+                    placeholder="Ваше имя"
+                    required>
+
+            <select id="review-boat">
+
+                <option value="Общий отзыв">
+                    Общий отзыв
+                </option>
+
+                <option value="Катер «Акватория»">
+                    Катер «Акватория»
+                </option>
+
+                <option value="Катер «Волна»">
+                    Катер «Волна»
+                </option>
+
+            </select>
+
+
+            <div class="rating-input">
+
+                <label>Оценка</label>
+
+                <select id="review-rating">
+
+                    <option value="5">★★★★★ — 5</option>
+                    <option value="4">★★★★☆ — 4</option>
+                    <option value="3">★★★☆☆ — 3</option>
+                    <option value="2">★★☆☆☆ — 2</option>
+                    <option value="1">★☆☆☆☆ — 1</option>
+
+                </select>
+
+            </div>
+
+
+            <textarea
+                    id="review-text"
+                    placeholder="Расскажите о вашем отдыхе..."
+                    required></textarea>
+
+            <button
+                    type="submit"
+                    class="btn btn-dark">
+
+                Опубликовать отзыв
+
+            </button>
+
+        </form>
+
+    </div>
+
+
+    <div id="reviews-list"
+         class="reviews-grid">
+    </div>
+
+</section>
+
+
+<script src="js/main.js"></script>
+<script src="js/reviews.js"></script>
+
+</body>
+</html>

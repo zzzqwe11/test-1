@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Галерея — Акватория</title>
+
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="pages.css">
+    <link rel="stylesheet" href="responsive.css">
+
+</head>
+
+<body>
+
+<header class="header inner-header">
+
+    <a href="index.html" class="logo">
+        АКВАТОРИЯ
+    </a>
+
+    <nav class="nav">
+        <a href="boats.html">Катера</a>
+        <a href="activities.html">Активный отдых</a>
+        <a href="gallery.html">Галерея</a>
+        <a href="reviews.html">Отзывы</a>
+        <a href="about.html">О компании</a>
+        <a href="contacts.html">Контакты</a>
+    </nav>
+
+</header>
+
+
+<section class="page-hero">
+
+    <p class="eyebrow dark">
+        ГАЛЕРЕЯ
+    </p>
+
+    <h1>
+        Наши<br>
+        <span>моменты</span>
+    </h1>
+
+</section>
+
+
+<section class="section">
+
+    <div class="gallery-filters">
+
+        <button onclick="filterGallery('all')">
+            Все
+        </button>
+
+        <button onclick="filterGallery('boats')">
+            Катера
+        </button>
+
+        <button onclick="filterGallery('clients')">
+            Клиенты
+        </button>
+
+        <button onclick="filterGallery('area')">
+            Акватория
+        </button>
+
+    </div>
+
+
+    <div class="gallery-grid">
+
+        <img src="images/boats/boat1.jpg"
+             data-category="boats">
+
+        <img src="images/clients/client1.jpg"
+             data-category="clients">
+
+        <img src="images/area/area.jpg"
+             data-category="area">
+
+        <img src="images/boats/boat2.jpg"
+             data-category="boats">
+
+        <img src="images/clients/client2.jpg"
+             data-category="clients">
+
+        <img src="images/clients/client3.jpg"
+             data-category="clients">
+
+        <img src="images/area/area-main.jpg"
+             data-category="area">
+
+        <img src="images/clients/client4.jpg"
+             data-category="clients">
+
+    </div>
+
+</section>
+
+
+<script src="js/main.js"></script>
+
+</body>
+</html>
